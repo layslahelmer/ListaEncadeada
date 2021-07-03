@@ -10,7 +10,7 @@ int main(){
     Lista alista;
     tCircuito a;
     int q, op;
-    string fn, nl;
+    string fn;
 
     cout << "Este programa armazena dados de circuitos em uma lista encadeada." << endl << "Digite 1 para entrar com os dados manualmente," << endl<< "Digite 2 para entrar com os dados de um arquivo," << endl << "Digite qualquer outro valor para sair" << endl;
     cin >> op;
@@ -18,7 +18,6 @@ int main(){
         case 1 :{
             cout << "Digite quantos elementos existem na lista: ";
             cin >> q;
-            tCircuito* c = new tCircuito[q];
             for(int b=0; b<q; b++){
                 cout << "Digite R1 do elemento " << b << " da lista: ";
                 cin >> a.R1;
